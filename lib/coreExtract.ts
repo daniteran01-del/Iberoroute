@@ -56,5 +56,7 @@ export function extractRideCore(text: string): CoreExtraction {
   if (lower.includes("split") || lower.includes("gas") || lower.includes("cost")) {
     notes = "Willing to split cost / gas.";
   }
-  if (!notes) not
+  if (!notes) notes = "No extra notes detected.";
 
+  return { origin, destination, day, time, notes };
+}
