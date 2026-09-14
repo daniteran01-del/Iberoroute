@@ -32,6 +32,16 @@ export default function Navbar() {
           </Link>
         </nav>
       </div>
+
+      <div className="bg-ink/5 border-t border-line">
+        <div className="max-w-2xl mx-auto px-6 py-2 flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-ink/60">
+          <span><span className="font-semibold text-ink/80">1.</span> Browse or search a ride</span>
+          <span className="hidden sm:inline">→</span>
+          <span><span className="font-semibold text-ink/80">2.</span> No luck? Post your own in /core</span>
+          <span className="hidden sm:inline">→</span>
+          <span><span className="font-semibold text-ink/80">3.</span> Message the driver, split the cost</span>
+        </div>
+      </div>
     </header>
   );
 }
